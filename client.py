@@ -4,7 +4,7 @@ import sys
 import numpy as np
 from matplotlib import pyplot as plt
 
-server_address = ('localhost', 5100)
+server_address = ('localhost', 50000)
 packet_len = 255 + 7
 A = np.zeros((128,128), dtype = np.uint32)
 

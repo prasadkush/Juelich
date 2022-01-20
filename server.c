@@ -24,7 +24,7 @@ int main(int argc, char** argv)
 		printf("socket creation successful\n");
 	}
 	servaddr.sin_family = AF_INET;
-	servaddr.sin_port = htons(5100);
+	servaddr.sin_port = htons(50000);
 	servaddr.sin_addr.s_addr = htonl(INADDR_ANY);
 	int bind_val = bind(sockid, (struct sockaddr *) &servaddr, sizeof(servaddr));
 	if (bind_val != 0)
