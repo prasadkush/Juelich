@@ -25,7 +25,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 			msgstart = msgdata.find('START: ')
 			if msgstart != -1:
 				numXY = ord(msgdata[msgstart + 7]);
-				print ('numXY: ', numXY)
+				print ('bytes received: ', len(data), "\n")
 				for i in range(msgstart+8, min(msgstart + 8 + 2*numXY, len(data) - 1), 2):
 					X = ord(msgdata[i])
 					Y = ord(msgdata[i+1])
