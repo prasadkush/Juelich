@@ -17,3 +17,5 @@ Steps to run the code:
    eg: ./server case1.data
 3) On another terminal, run the following:
    python3 client.py
+
+The image will be displayed after the codes have run.
